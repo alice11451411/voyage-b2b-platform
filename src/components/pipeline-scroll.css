@@ -1,0 +1,16 @@
+.pipeline-workspace .kanban-top-scroll {
+  height: 20px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin: -8px 0 14px;
+  border-radius: 5px;
+  background: #e9e6df;
+  scrollbar-color: #91a0b4 #e9e6df;
+  scrollbar-width: auto;
+}
+.pipeline-workspace .kanban-top-scroll[hidden] { display: none; }
+.pipeline-workspace .kanban-top-scroll > div { height: 1px; }
+.pipeline-workspace .kanban-top-scroll::-webkit-scrollbar { height: 14px; }
+.pipeline-workspace .kanban-top-scroll::-webkit-scrollbar-track { background: #e9e6df; border-radius: 5px; }
+.pipeline-workspace .kanban-top-scroll::-webkit-scrollbar-thumb { background: #91a0b4; border: 3px solid #e9e6df; border-radius: 7px; }
+.pipeline-workspace .kanban-top-scroll::-webkit-scrollbar-thumb:hover { background: #637b9b; }

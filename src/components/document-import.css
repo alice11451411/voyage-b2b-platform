@@ -1,0 +1,43 @@
+.document-import { border-top: 3px solid var(--gold, #b79563); }
+.document-import-heading { display: flex; align-items: flex-start; gap: 16px; margin-bottom: 22px; }
+.document-import-heading h2 { margin: 0 0 8px; }
+.document-import-heading p { margin: 0; color: var(--muted); line-height: 1.8; }
+.document-import-heading .badge { margin-left: auto; flex-shrink: 0; }
+.document-import-mark { display: grid; place-items: center; width: 48px; height: 48px; background: #f4ede1; color: #917243; border-radius: 12px; font-size: 28px; flex-shrink: 0; }
+.document-upload-form { display: flex; align-items: flex-end; gap: 16px; }
+.document-upload-form .field { flex: 1; margin-bottom: 0; min-width: 0; }
+.document-file-picker { display: flex; align-items: center; gap: 12px; margin-top: 8px; padding: 8px 10px; border: 1px solid #dce0e5; border-radius: 8px; background: #fff; min-width: 0; }
+.document-file-picker > span { min-width: 0; overflow-wrap: anywhere; font-size: 14px; font-weight: 400; color: var(--muted); }
+.document-upload-form input.document-file-input { display: none; }
+.document-upload-form input[type=file] { max-width: 100%; font-size: 14px; padding: 12px; }
+.document-upload-form input[type=file]::file-selector-button { border: 0; border-radius: 6px; background: #eaf0f7; padding: 8px 12px; margin-right: 12px; color: #405c8e; cursor: pointer; }
+.document-template { margin: 16px 0; font-size: 14px; color: var(--muted); }
+.document-template summary, .document-original summary { cursor: pointer; font-weight: 600; padding: 10px 0; }
+.document-template code { display: block; padding: 14px; background: #f5f3ee; border-radius: 8px; overflow-wrap: anywhere; line-height: 1.8; }
+.document-import-error { margin: 16px 0; }
+.document-preview { border-top: 1px solid var(--line); margin-top: 24px; padding-top: 24px; }
+.document-preview-summary { display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+.document-preview-summary h3 { margin: 0; }
+.document-preview-summary p { color: var(--muted); font-size: 14px; overflow-wrap: anywhere; }
+.document-original { margin: 16px 0; }
+.document-original pre { white-space: pre-wrap; overflow-wrap: anywhere; max-height: 320px; overflow: auto; background: #f5f3ee; color: var(--foreground); padding: 18px; font-family: inherit; font-size: 14px; line-height: 1.8; border-radius: 8px; }
+.document-product-previews { display: grid; gap: 22px; margin: 22px 0; }
+.document-preview-form-fields { min-width: 0; border: 0; margin: 0; padding: 0; }
+.document-product-preview { min-width: 0; border: 1px solid var(--line); border-radius: 12px; padding: 20px; }
+.document-product-preview.is-selected { border-color: #c6d4e8; }
+.document-product-preview legend { padding: 0 8px; max-width: 100%; overflow-wrap: anywhere; font-weight: 600; }
+.document-product-fields { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 22px; }
+.document-product-fields .field { min-width: 0; }
+.document-wide-field { grid-column: 1 / -1; }
+.document-confirm-actions { display: flex; align-items: center; justify-content: flex-end; flex-wrap: wrap; gap: 12px; }
+.document-confirm-actions .field-help { margin-right: auto; }
+@media (max-width: 760px) {
+  .document-import-heading { flex-wrap: wrap; gap: 12px; }
+  .document-import-heading > div { flex: 1; min-width: 180px; }
+  .document-import-heading .badge { margin-left: 0; }
+  .document-upload-form { flex-direction: column; align-items: stretch; }
+  .document-preview-summary { align-items: flex-start; flex-direction: column; }
+  .document-product-fields { grid-template-columns: minmax(0, 1fr); }
+  .document-product-preview { padding: 14px; }
+  .document-confirm-actions { align-items: stretch; flex-direction: column; }
+}
